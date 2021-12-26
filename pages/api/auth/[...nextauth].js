@@ -13,6 +13,7 @@ export default NextAuth({
         })
         // ...add more providers here
     ],
+    secret: "LlKq6ZtYbr+hTC073mAmAh9/h2HwMfsFo4hrfCx5mLg=",
     callbacks: {
         async jwt({ token, account }) {
             // Persist the OAuth access_token to the token right after signin
